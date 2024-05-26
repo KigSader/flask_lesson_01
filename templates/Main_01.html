@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<header>
+    <p align="center"><font size="7">Магазин товаров</font></p>
+</header>
+    <title>
+    {% block title %}
+        Мой сайт
+    {% endblock %}
+    </title>
+</head>
+<body>
+
+{% block content %}
+<h2>Одежда на любой вкус!</h2>
+<ul>
+    <li><a href="/products/" target="_blank"><font size="5">Брюки</font></a></li>
+    <li><a href="/shoes/" target="_blank"><font size="5">Обувь</font></a></li>
+    <li><a href="/jackets/" target="_blank"><font size="5">Куртки</font></a></li>
+</ul>
+{% endblock %}
+
+<div class="row fixed-bottom modal-footer">
+    <hr>
+    <p><font size="5">by Eldar</font></p>
+</div>
+
+</body>
+</html>
